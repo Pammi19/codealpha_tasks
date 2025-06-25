@@ -1,0 +1,71 @@
+        *{   
+            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #201c1c, #342c2c);
+        }
+        .container{
+            width: fit-content;
+            margin: 1rem;
+            box-shadow: 0 3px 15px  rgba(113, 117, 119, 0.2);
+        }
+    
+        .calculator{
+            border: 1px solid #524e4e;
+            padding: 1rem;
+            background: transparent;
+            border-radius: 0.7rem;
+            box-shadow: 0 3px 15px rgba(113, 117, 119, 0.1);
+        }
+        input{
+             width: 20rem;  
+             border: 1px solid #756f6f;
+            padding: 2rem;
+            margin: 1rem;
+            background: transparent;
+            box-shadow: 0 3px 15px rgba(84, 84, 84, 0.3);
+            text-align: right;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #fff;
+        }
+        .xx{
+            font-size: 1.3rem;
+            color: #d25a5a;
+        }
+        .operator{
+            color: #fa3b3b;
+            font-size: 1.7rem;
+
+        }
+        .equalbtn{
+            font-size: 2rem;
+             color: #000000;
+              font-weight: 500 ;
+             background-color: #3bf663;
+        }
+        button{
+            border: none;
+            box-shadow: -8px -8px 15px rgba(248, 90, 90, 0.1);
+            background: transparent;
+            height: 4rem;
+            width: 4rem;
+            border-radius: 50%;
+            font-size: larger;
+            margin: 0.6rem;
+            color: white ;
+        }
+        .button:hover {
+            opacity: 0.6;
+            transform: scale(1.1);
+            box-shadow: -8px -8px 15px rgba(155, 84, 190, 0.5);
+        } 

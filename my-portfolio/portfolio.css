@@ -1,0 +1,182 @@
+     *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+    body{
+            height: 100vh;
+            width: 100%;
+            background-color: #d5bebe;
+            color: #252323
+        }
+
+        /* header part */
+        header{
+            background-color: #222;
+            width: 100%;
+            padding: 1rem ;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: auto;
+            width: 100%;
+        }
+        .nav-links{
+            display: flex;
+            gap: 1.1rem;
+            list-style: none;  
+        }
+        .nav-lists li,a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+        .nav-lists li,a:hover {
+            color: #a2b1b3;
+            text-decoration: underline;
+        }
+        .intro{
+        background-color: #6abec9;
+        width: 100%;
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 0.8rem;
+       }
+
+        h2{
+            color: #222;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        .section{
+           border-radius: 2rem;
+           background: linear-gradient(45deg transparent #fff);
+           box-shadow: inset 0 3px 20px #a37a7a;
+           padding: 3rem;
+           margin: 7rem 1rem ;
+        }
+
+        /* project part */
+        .project-list {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+        }
+        .project-card {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: color 0.3s;
+            position: relative;
+        }
+        .project-card:hover {
+            transform: translateY(-15px);
+        }
+        .project-card img {
+        margin: 2rem 0rem;
+        height: 13em;
+        width: 14em; 
+         }
+        
+        /* skill part */
+       .skill-lists {
+        padding: 1.5rem 1rem;
+        border-radius: 10px;
+       }
+       .skill-bar{
+        margin-top: 30px ;
+        
+       }
+     .info {
+        margin-bottom: 15px;
+        text-align: left;
+     }
+    .info span {
+        font-weight: 500px;
+        font-size: 17px;
+        opacity: 0;
+        color:#826565;
+        animation: showText 0.5s 1s linear forwards;
+    }
+    @keyframes showText {
+        100% {
+            opacity: 1;
+        }
+    }
+    .progress-line {
+        width: 100%;
+        height: 0.7rem;
+        background-color: #f0f0f0;
+        position: relative;
+        transform: scaleX(0);
+        transform-origin: left;
+        border-radius: 0.5rem;
+        animation: animate 1s  cubic-bezier(1, 0, 0.5, 1) forwards;
+    }
+    @keyframes animate {
+        100% {
+            transform: scaleX(1);
+        }
+    }
+    .progress-line span {
+        height: 100%;
+        position: absolute;
+        border-radius: 0.6rem;
+        left: 0;
+        transform-origin: left;
+        transform: scaleX(0); 
+        animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+        background-color: rgb(75, 224, 75);
+   
+    }
+    .html span{width: 65%; }
+    .css span{width: 45%;}
+    .js  span{width: 25%;}
+
+     /*resume part  */
+    #resume a{
+        color: #0097a7;
+        font-size: 1.2rem;
+    }
+    
+    /* contact part */
+    .contact-form {
+         display: flex;
+         flex-direction: column;
+         gap: 1.5rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 0.4rem;
+    }
+    .contact-form button {
+        background-color: #00bcd4;
+        color: #fff;
+        border: none;
+        padding: 0.75rem;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .contact-form button:hover {
+        background: #0097a7;
+    }
+    footer{
+        text-align: center;
+        padding: 2rem;
+        background: #222;
+        color: #fff;
+    }
+     
+     
